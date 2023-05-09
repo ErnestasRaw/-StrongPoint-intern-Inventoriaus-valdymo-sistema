@@ -44,7 +44,7 @@ Paleidus programą, vartotojas bus prašomas pasirinkti, ką jis nori daryti. Pa
     Rodyti visų produktų bendrą vertę
     Baigti programos darbą
 
-Pasirinkus atitinkamą funkciją, vartotojas bus prašomas įvesti produktą, kuriuo jis nori atlikti veiksmą. Jei produktas nėra rastas, vartotojas bus informuojamas ir bus paprašytas įvesti naują produktą. Kai produktas yra rastas, vartotojas bus prašomas įvesti atitinkamus duomenis, pavyzdžiui, pavadinimą, kainą ar kiekį. Taip pat bus vykdomos patikros, kad vartotojas įveda tik teisingus duomenis. Po to, kai duomenys yra įvesti, jie bus išsaugoti į vektorių ir atvaizduojami vartotojui.
+    Pasirinkus atitinkamą funkciją, vartotojas bus prašomas įvesti produktą, kuriuo jis nori atlikti veiksmą. Jei produktas nėra rastas, vartotojas bus informuojamas ir bus paprašytas įvesti naują produktą.   Kai produktas yra rastas, vartotojas bus prašomas įvesti atitinkamus duomenis, pavyzdžiui, pavadinimą, kainą ar kiekį. Taip pat bus vykdomos patikros, kad vartotojas įveda tik teisingus duomenis. Po to, kai duomenys yra įvesti, jie bus išsaugoti į vektorių ir atvaizduojami vartotojui.
 
 Programos naudojimas:
 
@@ -70,26 +70,26 @@ Duomenų tikrinimas:
 
 Funkcijų aprašymas:
 
-void readFile(vector <Product>& inventory); // Funkcija, kuri nuskaito faila i vektoriu
-void addProduct(vector<Product>& inventory); // Funkcija, kuri prideda nauja produkta i inventoriu
-void editProduct(vector<Product>& inventory);   // Funkcija, kuri keicia esamo produkto kaina, pavadinima arba kieki
-void removeProduct(vector<Product>& inventory); // Funkcija, kuri pasalina produkta is inventoriaus
-void displayInventory(vector<Product>& inventory);  // Funkcija, kuri rodo viso inventoriaus turini lenteles formatu
-void searchProduct(vector<Product>& inventory); // Funkcija, kuri iesko produkto pagal pavadinima arba ID
-void sortInventory(vector<Product>& inventory); // Funkcija, kuri rusiuoja inventoriu pagal pavadinima arba ID didejimo tvarka
-void displayInventoryValue(vector<Product>& inventory); // Funkcija, kuri rodo visu inventoriuje esanciu produktu bendra verte
-double calculateInventoryValue(vector<Product>& inventory); // Funkcija, kuri apskaiciuoja viso inventoriaus verte
-void writeFile(vector <Product>& inventory); // Funkcija, kuri atnaujina Inventorius.txt faila
-bool isIdValid(int id, vector<Product>& inventory); // Funkcija, kuri tikrina, ar vartotojo ivestas ID jau egzistuoja inventoriuje
-bool isNameUnique(string name, vector<Product>& inventory); // Funkcija, kuri tikrina, ar vartotojo ivestas pavadinimas yra unikalus ir ne tuscias
-string removeSpaces(string str); // Funkcija, kuri pasalina tarpus is string
-bool isPositiveDouble(double number);   // Funkcija, kuri tikrina, ar vartotojo ivesta kaina yra teigiama
-bool isPositiveInt(int number);   // Funkcija, kuri tikrina, ar vartotojo ivestas kiekis yra teigiamas
-bool compareByName(const Product& p1, const Product& p2);   // Funkcija, kuri palygina produktus pagal varda (naudojama sortinimui)
-void sortInventoryByName(vector<Product>& inventory);   // Funkcija, kuri sortina pagal varda
-bool compareById(const Product& p1, const Product& p2);   // Funkcija, kuri palygina produktus pagal id (naudojama sortinimui)
-void sortInventoryById(vector<Product>& inventory);   // Funkcija, kuri rusiuoja pagal id
-void printMenu(vector<Product>& inventory, bool& running); // Funkcija, kuri atspausdina meniu
+    void readFile(vector <Product>& inventory); // Funkcija, kuri nuskaito faila i vektoriu
+    void addProduct(vector<Product>& inventory); // Funkcija, kuri prideda nauja produkta i inventoriu
+    void editProduct(vector<Product>& inventory);   // Funkcija, kuri keicia esamo produkto kaina, pavadinima arba kieki
+    void removeProduct(vector<Product>& inventory); // Funkcija, kuri pasalina produkta is inventoriaus
+    void displayInventory(vector<Product>& inventory);  // Funkcija, kuri rodo viso inventoriaus turini lenteles formatu
+    void searchProduct(vector<Product>& inventory); // Funkcija, kuri iesko produkto pagal pavadinima arba ID
+    void sortInventory(vector<Product>& inventory); // Funkcija, kuri rusiuoja inventoriu pagal pavadinima arba ID didejimo tvarka
+    void displayInventoryValue(vector<Product>& inventory); // Funkcija, kuri rodo visu inventoriuje esanciu produktu bendra verte
+    double calculateInventoryValue(vector<Product>& inventory); // Funkcija, kuri apskaiciuoja viso inventoriaus verte
+    void writeFile(vector <Product>& inventory); // Funkcija, kuri atnaujina Inventorius.txt faila
+    bool isIdValid(int id, vector<Product>& inventory); // Funkcija, kuri tikrina, ar vartotojo ivestas ID jau egzistuoja inventoriuje
+    bool isNameUnique(string name, vector<Product>& inventory); // Funkcija, kuri tikrina, ar vartotojo ivestas pavadinimas yra unikalus ir ne tuscias
+    string removeSpaces(string str); // Funkcija, kuri pasalina tarpus is string
+    bool isPositiveDouble(double number);   // Funkcija, kuri tikrina, ar vartotojo ivesta kaina yra teigiama
+    bool isPositiveInt(int number);   // Funkcija, kuri tikrina, ar vartotojo ivestas kiekis yra teigiamas
+    bool compareByName(const Product& p1, const Product& p2);   // Funkcija, kuri palygina produktus pagal varda (naudojama sortinimui)
+    void sortInventoryByName(vector<Product>& inventory);   // Funkcija, kuri sortina pagal varda
+    bool compareById(const Product& p1, const Product& p2);   // Funkcija, kuri palygina produktus pagal id (naudojama sortinimui)
+    void sortInventoryById(vector<Product>& inventory);   // Funkcija, kuri rusiuoja pagal id
+    void printMenu(vector<Product>& inventory, bool& running); // Funkcija, kuri atspausdina meniu
   
 Kodo kokybė:
 
