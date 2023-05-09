@@ -23,13 +23,7 @@ Kompiliavimas
 
 Paleidimas
 
-    Atidarykite "Command Prompt" langą.
-
-    Naviguokite į katalogą, kuriame yra sukurtas vykdomasis failas.
-
-    Parašykite pavadinimą ir spustelėkite "Enter".
-
-    Programa turėtų būti paleista.
+    Paleiskite sukompiliuotą failą.
 
 Kaip naudotis programa?
 
